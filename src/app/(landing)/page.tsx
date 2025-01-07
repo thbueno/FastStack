@@ -1,6 +1,6 @@
-import { Heading } from "@/app/components/heading"
-import { MaxWidthWrapper } from "@/app/components/max-width-wrapper"
-import { ShinyButton } from "@/app/components/shiny-button"
+import { Heading } from "@/components/heading"
+import { MaxWidthWrapper } from "@/components/max-width-wrapper"
+import { ShinyButton } from "@/components/shiny-button"
 import { Check } from "lucide-react"
 
 export default function Page() {
