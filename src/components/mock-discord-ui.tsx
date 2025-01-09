@@ -27,8 +27,18 @@ export const MockDiscordUI = ({ children }: PropsWithChildren) => {
                     <div className="group mt-auto size-12 bg-discord-background rounded-3xl flex items-center justify-center mb-3 hover:rounded-xl transition-all duration-200 hover:bg-[#3ba55c] cursor-not-allowed">
                         <PlusCircle className="text-[#3ba55c] group-hover:text-white" />
                     </div>
+                </div>
 
+                {/* Dm List */}
+                <div className="hidden md:flex w-69 bg-[#2f3136] flex-col">
+                    <div className="px-4 h-16 border-b border-[#202225] flex items-center shadow-sm">
+                        <div className="w-full bg-[#202225] tex-sm rounded px-2 h-8 flex items-center justify-center text-gray-500 cursor-not-allowed">
+                            find or start a conversation
+                        </div>
+                        <div className="text-discord-timestamp"></div>
+                        
+                    </div>
                 </div>
             </div>
             )
-}
+}  
