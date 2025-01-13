@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "deploy": "wrangler deploy",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\""
   },
   "dependencies": {
     "@clerk/nextjs": "^6.9.6",
@@ -22,6 +23,7 @@
     "clsx": "^2.1.1",
     "hono": "^4.5.5",
     "lucide-react": "^0.469.0",
+    "motion": "^11.17.0",
     "next": "^14.2.8",
     "prisma": "^5.18.0",
     "react": "^18",
