@@ -1,10 +1,11 @@
 import { DiscordMessage } from "@/components/discord-message"
 import { Heading } from "@/components/heading"
+import { Icons } from "@/components/icon"
 import { MaxWidthWrapper } from "@/components/max-width-wrapper"
 import { MockDiscordUI } from "@/components/mock-discord-ui"
 import { ShinyButton } from "@/components/shiny-button"
 import { AnimatedList, AnimatedListItem } from "@/components/ui/animated-list"
-import { Check } from "lucide-react"
+import { Check, Star } from "lucide-react"
 import Image from "next/image"
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
 import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism"
@@ -284,6 +285,91 @@ export default function Page() {
               </div>
 
               <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]" />
+            </div>
+          </div>
+        </MaxWidthWrapper>
+      </section>
+
+      <section className="relative py-24 sm:pm-32 bg-white">
+        <MaxWidthWrapper className="flex flex-col items-center gap-16 sm:gap-20">
+          <div>
+            <h2 className="text-center text-base/7 font-semibold text-brand-600">
+              Real-World Experiences
+            </h2>
+            <Heading className="text-center">
+              What Our Customers Are Saying
+            </Heading>
+          </div>
+
+          {/* First Costumer Review */}
+
+          <div className="mx-auto grid max-w-2xl grid-cols-1 px-4 lg:mx-0 lg:max-w-none lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-200">
+            <div className="flex flex-auto flex-col gap-4 bg-brand-25 p-6 sm:p-8 lg:p-16 rounded-t-[2rem] lg:rounded-tr-none lg:rounded-l-[2rem]">
+              <div className="flex gap-0.5 mb-2 justify-center lg:justify-start">
+                <Star className="size-5 text-brand-600 fill-brand-600" />
+                <Star className="size-5 text-brand-600 fill-brand-600" />
+                <Star className="size-5 text-brand-600 fill-brand-600" />
+                <Star className="size-5 text-brand-600 fill-brand-600" />
+                <Star className="size-5 text-brand-600 fill-brand-600" />
+                <Star className="size-5 text-brand-600 fill-brand-600" />
+              </div>
+              <p className="text-base sm:text-lg lg:text-lg/8 font-medium tracking-tight text-brand-950 text-center lg:text-left text-pretty">
+                "PingPanda is the best monitoring tool I´ve ever used. It´s
+                simple, fast and reliable. I can´t imagine my day without it."
+              </p>
+
+              <div className="flex flex-col justify-center items-center lg:justify-start sm:flex-row sm:items-start sm:justify-center gap-4 mt-2">
+                <Image
+                  src="/user-2.png"
+                  alt="User 2"
+                  width={48}
+                  height={48}
+                  className="object-cover rounded-full"
+                />
+                <div className="flex flex-col items-center lg:items-start">
+                  <p className="font-semibold flex items-center">
+                    Aria Stark
+                    <Icons.verificationBadge className="size-4 inline-block ml-1.5" />
+                  </p>
+                  <p className="text-sm text-gray-600">@starkforever</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Second Costumer Review */}
+
+          <div className="mx-auto grid max-w-2xl grid-cols-1 px-4 lg:mx-0 lg:max-w-none lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-200">
+            <div className="flex flex-auto flex-col gap-4 bg-brand-25 p-6 sm:p-8 lg:p-16 rounded-t-[2rem] lg:rounded-tr-none lg:rounded-l-[2rem]">
+              <div className="flex gap-0.5 mb-2 justify-center lg:justify-start">
+                <Star className="size-5 text-brand-600 fill-brand-600" />
+                <Star className="size-5 text-brand-600 fill-brand-600" />
+                <Star className="size-5 text-brand-600 fill-brand-600" />
+                <Star className="size-5 text-brand-600 fill-brand-600" />
+                <Star className="size-5 text-brand-600 fill-brand-600" />
+                <Star className="size-5 text-brand-600 fill-brand-600" />
+              </div>
+              <p className="text-base sm:text-lg lg:text-lg/8 font-medium tracking-tight text-brand-950 text-center lg:text-left text-pretty">
+                "PingPanda is the best monitoring tool I´ve ever used. It´s
+                simple, fast and reliable. I can´t imagine my day without it."
+              </p>
+
+              <div className="flex flex-col justify-center items-center lg:justify-start sm:flex-row sm:items-start sm:justify-center gap-4 mt-2">
+                <Image
+                  src="/user-2.png"
+                  alt="User 2"
+                  width={48}
+                  height={48}
+                  className="object-cover rounded-full"
+                />
+                <div className="flex flex-col items-center lg:items-start">
+                  <p className="font-semibold flex items-center">
+                    Aria Stark
+                    <Icons.verificationBadge className="size-4 inline-block ml-1.5" />
+                  </p>
+                  <p className="text-sm text-gray-600">@starkforever</p>
+                </div>
+              </div>
             </div>
           </div>
         </MaxWidthWrapper>
